@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 50px 20px;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #07111f;
+
+    color: #e8f0f7;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 750px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 42px;
+
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #91a5b8;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.cipher-card {
+    padding: 35px;
+
+    background: #0c1c2d;
+
+    border: 1px solid #20394f;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-section label,
+.key-section label,
+.output-header label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+}
+
+textarea {
+    width: 100%;
+
+    min-height: 170px;
+
+    padding: 16px;
+
+    resize: vertical;
+
+    background: #07111f;
+
+    color: #ffffff;
+
+    border: 1px solid #29445b;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #5eead4;
+}
+
+.character-count {
+    text-align: right;
+
+    margin-top: 7px;
+
+    color: #71879a;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   CONTROLS
+========================= */
+
+.controls {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+
+.key-control {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.key-control button {
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #1b3449;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.key-control button:hover {
+    background: #29445b;
+}
+
+.key-control input {
+    width: 65px;
+
+    height: 42px;
+
+    text-align: center;
+
+    background: #07111f;
+
+    color: white;
+
+    border: 1px solid #29445b;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.key-control input:focus {
+    border-color: #5eead4;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.encrypt-button {
+    background: #5eead4;
+
+    color: #07111f;
+}
+
+.decrypt-button {
+    background: #29445b;
+
+    color: white;
+}
+
+
+/* =========================
+   OUTPUT
+========================= */
+
+.output-section {
+    margin-top: 30px;
+}
+
+.output-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.copy-button {
+    padding: 7px 12px;
+
+    background: transparent;
+
+    color: #5eead4;
+
+    border: 1px solid #29445b;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background: #102436;
+}
+
+.output {
+    min-height: 150px;
+
+    padding: 20px;
+
+    background: #07111f;
+
+    border: 1px solid #29445b;
+
+    border-radius: 8px;
+
+    color: #dce8f2;
+
+    word-break: break-word;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================
+   CLEAR BUTTON
+========================= */
+
+.clear-button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    background: transparent;
+
+    color: #91a5b8;
+
+    border: 1px solid #29445b;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background: #102436;
+
+    color: white;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.info-item {
+    padding: 20px;
+
+    background: #0c1c2d;
+
+    border: 1px solid #20394f;
+
+    border-radius: 8px;
+}
+
+.info-item strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #5eead4;
+}
+
+.info-item span {
+    color: #91a5b8;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 35px;
+
+    color: #71879a;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .cipher-card {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+    }
+
+    .controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .key-section {
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+    .buttons {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .buttons button {
+        padding: 12px 5px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+}
