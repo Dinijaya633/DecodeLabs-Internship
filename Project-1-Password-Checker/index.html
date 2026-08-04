@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Strength Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="icon">🔐</div>
+
+            <h1>Password Strength Checker</h1>
+
+            <p class="description">
+                Check how strong and secure your password is.
+            </p>
+
+            <!-- Password Input -->
+            <div class="input-group">
+
+                <label for="password">Enter Your Password</label>
+
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        autocomplete="new-password"
+                    >
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="show-btn"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Strength Result -->
+            <div class="strength-section">
+
+                <div class="strength-header">
+
+                    <span>Password Strength</span>
+
+                    <span id="strengthText">
+                        Not Checked
+                    </span>
+
+                </div>
+
+                <div class="progress-container">
+
+                    <div
+                        id="strengthBar"
+                        class="progress-bar"
+                    ></div>
+
+                </div>
+
+            </div>
+
+            <!-- Requirements -->
+            <div class="requirements">
+
+                <h3>Password Requirements</h3>
+
+                <div
+                    id="lengthRequirement"
+                    class="requirement"
+                >
+                    <span class="check">✕</span>
+                    <span>At least 8 characters</span>
+                </div>
+
+                <div
+                    id="uppercaseRequirement"
+                    class="requirement"
+                >
+                    <span class="check">✕</span>
+                    <span>Contains an uppercase letter</span>
+                </div>
+
+                <div
+                    id="numberRequirement"
+                    class="requirement"
+                >
+                    <span class="check">✕</span>
+                    <span>Contains a number</span>
+                </div>
+
+                <div
+                    id="symbolRequirement"
+                    class="requirement"
+                >
+                    <span class="check">✕</span>
+                    <span>Contains a special symbol</span>
+                </div>
+
+            </div>
+
+            <!-- Check Button -->
+            <button
+                id="checkButton"
+                class="check-button"
+            >
+                Check Password
+            </button>
+
+            <!-- Recommendation -->
+            <div
+                id="recommendation"
+                class="recommendation hidden"
+            ></div>
+
+        </div>
+
+        <p class="footer">
+            Password Strength Checker | Cybersecurity Project 1
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

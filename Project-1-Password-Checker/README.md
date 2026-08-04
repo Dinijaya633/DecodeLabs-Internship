@@ -1,72 +1,196 @@
-# Password Strength Checker
+# 🔐 Password Strength Checker
 
-A simple Python command-line tool that evaluates the strength of a password based on common security criteria and gives feedback on how to improve it.
+## DecodeLabs Internship – Cyber Security Project 1
 
-## Features
+A simple cybersecurity project that evaluates the strength of a password based on basic security requirements.
 
-- Checks password against key strength criteria:
-  - Minimum length (8+ characters)
-  - Presence of uppercase letters
-  - Presence of lowercase letters
-  - Presence of numbers
-  - Presence of special symbols
-- Assigns a strength rating: **Weak**, **Medium**, or **Strong**
-- Provides specific recommendations to improve weak or medium passwords
+## 📌 Project Overview
 
-## How It Works
+The Password Strength Checker is designed to check whether a password is **Weak, Medium, or Strong**.
 
-The script scores a password based on how many of the following criteria it meets:
+The application evaluates a password based on:
 
-| Criteria | Description |
-|---|---|
-| Length | At least 8 characters |
-| Uppercase | Contains at least one uppercase letter (A-Z) |
-| Lowercase | Contains at least one lowercase letter (a-z) |
-| Number | Contains at least one digit (0-9) |
-| Symbol | Contains at least one special character (e.g. `!@#$%`) |
+* Password length
+* Uppercase letters
+* Numbers
+* Special symbols
 
-Based on the total score, the password is rated Weak, Medium, or Strong, and the tool prints suggestions for any missing criteria.
+The project demonstrates basic cybersecurity concepts, string handling, input validation, and conditional logic.
 
-## Usage
+## 🎯 Project Goal
 
-Run the script from the command line:
+The goal of this project is to create a program that can evaluate password strength and provide users with useful feedback about improving password security.
+
+## ✨ Features
+
+* 🔐 Password strength evaluation
+* 📏 Password length validation
+* 🔠 Uppercase letter detection
+* 🔢 Number detection
+* 🔣 Special symbol detection
+* 📊 Weak, Medium, or Strong classification
+* 💡 Security recommendations
+* 👁️ Show/Hide password option
+* 📱 Responsive web interface
+
+## 🛠️ Technologies Used
+
+### Web Version
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Python Version
+
+* Python 3
+* String handling
+* Conditional logic
+
+## 📂 Project Structure
+
+```text
+Project-1-Password-Checker
+│
+├── index.html
+├── style.css
+├── script.js
+├── password_checker.py
+└── README.md
+```
+
+## 🔍 Password Strength Criteria
+
+The application checks four main requirements:
+
+| Requirement | Description                                   |
+| ----------- | --------------------------------------------- |
+| Length      | Password should contain at least 8 characters |
+| Uppercase   | Password should contain an uppercase letter   |
+| Number      | Password should contain at least one number   |
+| Symbol      | Password should contain a special symbol      |
+
+## 📊 Strength Classification
+
+The password is evaluated based on the number of requirements it satisfies.
+
+* **Weak** – 0 to 1 requirements satisfied
+* **Medium** – 2 to 3 requirements satisfied
+* **Strong** – All 4 requirements satisfied
+
+### Example
+
+```text
+hello
+```
+
+Result:
+
+```text
+Weak
+```
+
+```text
+Hello123
+```
+
+Result:
+
+```text
+Medium
+```
+
+```text
+Hello@123
+```
+
+Result:
+
+```text
+Strong
+```
+
+## 🚀 How to Run the Web Version
+
+### Step 1: Open the project
+
+Open the project folder in Visual Studio Code.
+
+### Step 2: Check the files
+
+Make sure the following files are available:
+
+```text
+index.html
+style.css
+script.js
+```
+
+### Step 3: Run the application
+
+Open `index.html` in a web browser.
+
+Alternatively, install the **Live Server** extension in Visual Studio Code and select:
+
+```text
+Right Click → Open with Live Server
+```
+
+## 🐍 How to Run the Python Version
+
+Make sure Python is installed on your computer.
+
+Open the terminal inside the project folder and run:
 
 ```bash
 python password_checker.py
 ```
 
-You'll be prompted to enter a password, and the tool will display a full breakdown of its strength along with recommendations.
+If your system uses `python3`, run:
 
-### Example Output
-
-```
-===================================
-     PASSWORD STRENGTH CHECKER
-===================================
-Enter your password: Hello123
-
---- Password Strength Analysis ---
-Password Length: 8 characters
-Minimum Length (8+): Yes
-Uppercase Letter: Yes
-Number: Yes
-Symbol: No
-
-Password Strength: Medium
-
-Recommendations:
-- Add at least one special symbol.
+```bash
+python3 password_checker.py
 ```
 
-## Requirements
+## 🔒 Security Note
 
-- Python 3.x
-- No external dependencies (uses only the built-in `string` module)
+This project is intended for educational purposes and demonstrates basic password-strength evaluation.
 
-## Project Info
+The web version performs password checks locally in the browser and does not require a backend server.
 
-This project was built as part of the DecodeLabs Internship program.
+For real-world applications, passwords should never be stored or transmitted as plaintext.
 
-## Author
+## 📚 Learning Outcomes
 
-Dinijaya
+Through this project, I developed an understanding of:
+
+* Basic password security principles
+* String handling
+* Conditional logic
+* Input validation
+* JavaScript event handling
+* HTML and CSS web development
+* Basic cybersecurity practices
+
+## 🔮 Future Improvements
+
+Possible future improvements include:
+
+* Checking passwords against common or leaked password lists
+* Adding a password entropy calculation
+* Implementing a more advanced password scoring system
+* Adding a password generator
+* Improving accessibility
+* Adding automated security tests
+
+## 👨‍💻 Author
+
+**Dinijaya Peiris**
+
+Cyber Security Undergraduate
+
+## 🛡️ Project
+
+**DecodeLabs Cyber Security Internship – Project 1**
+
+**Password Strength Checker**
