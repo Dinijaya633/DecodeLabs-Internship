@@ -1,0 +1,12 @@
+From: University Student Services <studentservices@university.example>
+
+Subject: Semester Examination Timetable
+
+Dear Students,
+
+The semester examination timetable is now available through the normal university student portal.
+
+Please review the timetable when convenient.
+
+Regards,
+Student Services

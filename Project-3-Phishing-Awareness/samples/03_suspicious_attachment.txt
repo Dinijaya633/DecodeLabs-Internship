@@ -1,0 +1,11 @@
+From: IT Support <support@example.com>
+
+Subject: Security Update Required
+
+A critical security update is available for your computer.
+
+Please open the attached security_update.exe file immediately.
+
+Failure to install the update may cause your account to be blocked.
+
+Enter your password when requested.

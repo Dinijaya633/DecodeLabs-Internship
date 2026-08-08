@@ -1,0 +1,12 @@
+From: University Administration <admin@university.example>
+
+Subject: Library Opening Hours
+
+Dear Students,
+
+Please note that the university library will be open from 8:00 AM to 8:00 PM from Monday to Friday.
+
+No action is required.
+
+Regards,
+University Administration

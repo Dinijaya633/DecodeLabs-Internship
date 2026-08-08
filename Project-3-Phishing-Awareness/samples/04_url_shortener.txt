@@ -1,0 +1,11 @@
+From: Account Support <support@example.com>
+
+Subject: Security Verification
+
+Your account requires verification.
+
+Please click the following link and sign in:
+
+https://bit.ly/account-verification
+
+Verify your username and password immediately.

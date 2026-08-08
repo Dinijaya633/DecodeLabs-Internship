@@ -1,0 +1,13 @@
+From: Billing Department <billing@example.com>
+
+Subject: Urgent Payment Required
+
+Your invoice is overdue.
+
+Please make the payment immediately to avoid account suspension.
+
+Confirm your payment information and credit card details using the link below:
+
+http://payment-example.xyz/verify
+
+Do not delay. Your service may be terminated if payment is not completed today.

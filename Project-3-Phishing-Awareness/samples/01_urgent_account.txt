@@ -1,0 +1,15 @@
+From: Security Team <security-alert@example.com>
+
+Subject: URGENT - Account Suspension Warning
+
+URGENT: Your account will be suspended within 24 hours.
+
+We detected unusual activity on your account.
+
+Please verify your account immediately by clicking:
+
+http://192.168.1.50/login
+
+Enter your username and password to restore access.
+
+Failure to comply may result in your account being permanently closed.
